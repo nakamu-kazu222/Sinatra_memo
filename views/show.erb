@@ -1,0 +1,15 @@
+<div>
+  <h2><%= h(@title) %></h2>
+</div>
+<section>
+  <div>
+    <p><%= h(@text) %></p>
+  </div>
+  <form method="post" action="<%= @id %>">
+    <div>
+      <input type="submit" value="削除">
+      <input type="hidden" name="_method" value="DELETE">
+      <a href="/memo/<%= @id %>/edit">編集</a>
+    </div>
+  </form>
+</section>

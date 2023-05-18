@@ -51,7 +51,7 @@ end
 
 get '/memo/:id' do
   display_memo_contents_of_id
-  erb :detail
+  erb :show
 end
 
 get '/memo/:id/edit' do
