@@ -1,0 +1,13 @@
+<div>
+  <h2>メモ一覧</h2>
+</div>
+<section>
+  <div>
+    <a href="/memo/new">メモ登録</a>
+  </div>
+  <ul>
+    <% @memo_data.each do |memo| %>
+      <li><a href="<%= "/memo/#{memo['id']}" %>"><%= h(memo['title']) %></a></li>
+    <% end %>
+  </ul>
+<section>
