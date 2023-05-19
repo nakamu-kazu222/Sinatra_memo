@@ -1,15 +1,15 @@
-<div>
-  <h2><%= h(@title) %></h2>
+<div class="header">
+  <h2 class="header_title"><%= h(@title) %></h2>
 </div>
-<section>
+<section class="memo">
   <div>
-    <p><%= h(@text) %></p>
+    <p class="memo_text"><%= h(@text) %></p>
   </div>
   <form method="post" action="<%= @id %>">
-    <div>
-      <input type="submit" value="削除">
+    <div class="memo-main__button">
+      <input type="submit" value="削除" class="delete_button">
       <input type="hidden" name="_method" value="DELETE">
-      <a href="/memo/<%= @id %>/edit">編集</a>
+      <a href="/memo/<%= @id %>/edit" class="edit_button">編集</a>
     </div>
   </form>
 </section>
